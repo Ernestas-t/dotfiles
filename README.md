@@ -73,28 +73,6 @@ _Add screenshots of your setup here._
 
 ## Customization
 
-### Gruvbox Theme
-
-To apply the Gruvbox theme to your terminal and other applications, follow these steps:
-
-1. **Kitty Terminal:**
-    - Copy the Gruvbox theme configuration to your Kitty config directory:
-      ```sh
-      cp ~/.dotfiles/kitty/gruvbox.conf ~/.config/kitty/
-      ```
-
-2. **Neovim:**
-    - Install the Gruvbox theme plugin:
-      ```sh
-      :Plug 'morhetz/gruvbox'
-      ```
-    - Add the following lines to your `init.vim` or `init.lua`:
-      ```vim
-      syntax enable
-      set background=dark
-      colorscheme gruvbox
-      ```
-
 ### Powerlevel10k
 
 To configure Powerlevel10k, run the configuration wizard:
@@ -105,6 +83,46 @@ p10k configure
 ### Waybar
 
 To customize Waybar, edit the configuration file located at `~/.config/waybar/config` and the style file at `~/.config/waybar/style.css`.
+
+### Kitty
+
+To customize Kitty, edit the configuration file located at `~/.config/kitty/kitty.conf`. You can also add themes by including additional configuration files.
+
+### Neovim
+
+To customize Neovim, edit the configuration file located at `~/.config/nvim/init.lua`. You can add plugins using the Lazy plugin manager.
+
+1. **Add plugins:**
+    ```lua
+    require("lazy").setup({
+      -- Add your plugins here
+      "morhetz/gruvbox",
+      -- other plugins
+    })
+    ```
+### Ranger
+
+To customize Ranger, edit the configuration files located at `~/.config/ranger/rc.conf`, `~/.config/ranger/rifle.conf`, and `~/.config/ranger/scope.sh`.
+
+### Dunst
+
+To customize Dunst, edit the configuration file located at `~/.config/dunst/dunstrc`.
+
+### Tmux
+
+To customize Tmux, edit the configuration file located at `~/.tmux.conf`. You can add plugins using a plugin manager like [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm).
+
+### Zsh
+
+To customize Zsh, edit the configuration file located at `~/.zshrc`. You can add plugins and themes using a plugin manager like [Oh My Zsh](https://ohmyz.sh/) or [zplug](https://github.com/zplug/zplug).
+
+### Spicetify
+
+To customize Spicetify, edit the configuration file located at `~/.config/spicetify/config.ini`. You can also add themes and extensions by placing them in the appropriate directories.
+
+### Hyprland
+
+To customize Hyprland, edit the configuration files located at `~/.config/hypr/hyprland.conf` and other related configuration files.
 
 ## Acknowledgements
 
