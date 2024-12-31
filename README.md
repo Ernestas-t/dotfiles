@@ -1,6 +1,19 @@
 # Gruvbox Hyprland Arch Linux
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Arch%20Linux-blue.svg)
+
 These are my personal dotfiles for my Arch Linux setup using Hyprland. The main goal of this setup is to be as minimal as possible and to make extensive use of the terminal.
+
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+  - [Manual Setup](#manual-setup)
+- [Screenshots](#screenshots)
+- [Customization](#customization)
+- [Acknowledgements](#acknowledgements)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Features
 
@@ -191,6 +204,10 @@ To customize Hyprland, edit the configuration files located at `~/.config/hypr/h
 - [qBittorrent](https://www.qbittorrent.org/)
 - [obsidian](https://obsidian.md/)
 - [spicetify](https://github.com/khanhas/spicetify-cli)
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
 
 ## License
 
