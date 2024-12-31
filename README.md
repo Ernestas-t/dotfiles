@@ -1,4 +1,4 @@
-# Dotfiles
+# Gruvbox Hyprland Arch Linux
 
 These are my personal dotfiles for my Arch Linux setup using Hyprland. The main goal of this setup is to be as minimal as possible and to make extensive use of the terminal.
 
