@@ -33,13 +33,20 @@ done
 # Create symlinks for configuration files
 echo "Creating symlinks for configuration files..."
 
-ln -sf ~/.dotfiles/.zshrc ~/.zshrc
-ln -sf ~/.dotfiles/.tmux.conf ~/.tmux.conf
-ln -sf ~/.dotfiles/nvim ~/.config/nvim
-ln -sf ~/.dotfiles/kitty ~/.config/kitty
-ln -sf ~/.dotfiles/waybar ~/.config/waybar
-ln -sf ~/.dotfiles/wofi ~/.config/wofi
-ln -sf ~/.dotfiles/ranger ~/.config/ranger
-ln -sf ~/.dotfiles/dunst ~/.config/dunst
+ln -s ~/dotfiles/.zshrc ~/.zshrc
+ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/.tmux ~/.tmux
+ln -s ~/dotfiles/.themes ~/.themes
+ln -s ~/dotfiles/nvim ~/.config/nvim
+ln -s ~/dotfiles/kitty ~/.config/kitty
+ln -s ~/dotfiles/waybar ~/.config/waybar
+ln -s ~/dotfiles/wofi ~/.config/wofi
+ln -s ~/dotfiles/ranger ~/.config/ranger
+ln -s ~/dotfiles/dunst ~/.config/dunst
+ln -s ~/dotfiles/btop ~/.config/btop
+ln -s ~/dotfiles/calcurse ~/.config/calcurse
+ln -s ~/dotfiles/qBittorrent ~/.config/qBittorrent
+ln -s ~/dotfiles/spicetify ~/.config/spicetify
+ln -s ~/dotfiles/hypr ~/.config/hypr
 
 echo "Setup completed successfully!"

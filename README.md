@@ -30,35 +30,39 @@ These are my personal dotfiles for my Arch Linux setup using Hyprland. The main 
 
 2. **Run the setup script:**
     ```sh
-    cd ~/.dotfiles
+    cd ~/dotfiles
     ./setup.sh
     ```
 
-3. **Symlink configuration files:**
+### Manual Setup
+
+If you prefer to set up the dotfiles manually, follow these steps:
+
+1. **Symlink configuration files:**
     ```sh
     ln -s ~/dotfiles/.zshrc ~/.zshrc
     ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
     ln -s ~/dotfiles/.tmux ~/.tmux
     ln -s ~/dotfiles/.themes ~/.themes
-    ln -s ~/.dotfiles/nvim ~/.config/nvim
-    ln -s ~/.dotfiles/kitty ~/.config/kitty
-    ln -s ~/.dotfiles/waybar ~/.config/waybar
-    ln -s ~/.dotfiles/wofi ~/.config/wofi
-    ln -s ~/.dotfiles/ranger ~/.config/ranger
-    ln -s ~/.dotfiles/dunst ~/.config/dunst
-    ln -s ~/.dotfiles/btop ~/.config/btop
-    ln -s ~/.dotfiles/calcurse ~/.config/calcurse
-    ln -s ~/.dotfiles/qBittorrent ~/.config/qBittorrent
-    ln -s ~/.dotfiles/spicetify ~/.config/spicetify
-    ln -s ~/.dotfiles/hypr ~/.config/hypr
+    ln -s ~/dotfiles/nvim ~/.config/nvim
+    ln -s ~/dotfiles/kitty ~/.config/kitty
+    ln -s ~/dotfiles/waybar ~/.config/waybar
+    ln -s ~/dotfiles/wofi ~/.config/wofi
+    ln -s ~/dotfiles/ranger ~/.config/ranger
+    ln -s ~/dotfiles/dunst ~/.config/dunst
+    ln -s ~/dotfiles/btop ~/.config/btop
+    ln -s ~/dotfiles/calcurse ~/.config/calcurse
+    ln -s ~/dotfiles/qBittorrent ~/.config/qBittorrent
+    ln -s ~/dotfiles/spicetify ~/.config/spicetify
+    ln -s ~/dotfiles/hypr ~/.config/hypr
     ```
 
-4. **Install required packages:**
+2. **Install required packages:**
     ```sh
     sudo pacman -S zsh tmux neovim kitty waybar wofi ranger dunst calcurse btop qbittorrent
     ```
 
-5. **Install additional tools:**
+3. **Install additional tools:**
     - **Hyprland**: Follow the [installation guide](https://wiki.hyprland.org/Getting-Started/Installation/)
     - **Powerlevel10k**: Follow the [installation guide](https://github.com/romkatv/powerlevel10k#installation)
     - **Spicetify**: Follow the [installation guide](https://github.com/khanhas/spicetify-cli#installation)
