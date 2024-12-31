@@ -69,7 +69,57 @@ If you prefer to set up the dotfiles manually, follow these steps:
 
 ## Screenshots
 
-_Add screenshots of your setup here._
+- **Desktop Overview:**
+  ![Desktop Overview](path/to/desktop_overview.png)
+  *My minimal Hyprland desktop with Gruvbox theme.*
+
+- **Terminal:**
+  ![Terminal](path/to/terminal.png)
+  *Kitty terminal with Zsh and Powerlevel10k theme.*
+
+- **Neovim:**
+  ![Neovim](path/to/neovim.png)
+  *Neovim with Gruvbox theme and plugins.*
+
+- **File Manager:**
+  ![Ranger](path/to/ranger.png)
+  *Ranger file manager in action.*
+
+- **Tmux:**
+  ![Tmux](path/to/tmux.png)
+  *Tmux session with multiple panes.*
+
+- **Dunst Notifications:**
+  ![Dunst](path/to/dunst.png)
+  *Dunst notification style.*
+
+- **Waybar:**
+  ![Waybar](path/to/waybar.png)
+  *Waybar showing system information.*
+
+- **Application Launcher:**
+  ![Wofi](path/to/wofi.png)
+  *Wofi application launcher.*
+
+- **System Monitoring:**
+  ![Btop](path/to/btop.png)
+  *Btop system monitoring.*
+
+- **Calendar Management:**
+  ![Calcurse](path/to/calcurse.png)
+  *Calcurse calendar and task management.*
+
+- **Spotify Customization:**
+  ![Spicetify](path/to/spicetify.png)
+  *Spicetify with custom Spotify theme.*
+
+- **Torrent Client:**
+  ![qBittorrent](path/to/qbittorrent.png)
+  *qBittorrent interface.*
+
+- **Note-taking:**
+  ![Obsidian](path/to/obsidian.png)
+  *Obsidian note-taking setup.*
 
 ## Customization
 
