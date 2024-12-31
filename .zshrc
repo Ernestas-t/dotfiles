@@ -135,6 +135,12 @@ export POSTGRES_PASSWORD='BandauButAmazing.123'
 export POSTGRES_HOST='localhost'
 export POSTGRES_PORT='5432'
 
+# Bind Alt + k to move up in history
+bindkey '^[k' up-line-or-history
+
+# Bind Alt + j to move down in history
+bindkey '^[j' down-line-or-history
+
 #bindkey -r '^L'
 #bindkey -r '^H'
 #bindkey -r '^J'
