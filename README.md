@@ -25,7 +25,7 @@ These are my personal dotfiles for my Arch Linux setup using Hyprland. The main 
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/yourusername/dotfiles.git ~/.dotfiles
+    git clone https://github.com/yourusername/dotfiles.git ~/dotfiles
     ```
 
 2. **Run the setup script:**
@@ -36,14 +36,21 @@ These are my personal dotfiles for my Arch Linux setup using Hyprland. The main 
 
 3. **Symlink configuration files:**
     ```sh
-    ln -s ~/.dotfiles/.zshrc ~/.zshrc
-    ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
+    ln -s ~/dotfiles/.zshrc ~/.zshrc
+    ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+    ln -s ~/dotfiles/.tmux ~/.tmux
+    ln -s ~/dotfiles/.themes ~/.themes
     ln -s ~/.dotfiles/nvim ~/.config/nvim
     ln -s ~/.dotfiles/kitty ~/.config/kitty
     ln -s ~/.dotfiles/waybar ~/.config/waybar
     ln -s ~/.dotfiles/wofi ~/.config/wofi
     ln -s ~/.dotfiles/ranger ~/.config/ranger
     ln -s ~/.dotfiles/dunst ~/.config/dunst
+    ln -s ~/.dotfiles/btop ~/.config/btop
+    ln -s ~/.dotfiles/calcurse ~/.config/calcurse
+    ln -s ~/.dotfiles/qBittorrent ~/.config/qBittorrent
+    ln -s ~/.dotfiles/spicetify ~/.config/spicetify
+    ln -s ~/.dotfiles/hypr ~/.config/hypr
     ```
 
 4. **Install required packages:**
