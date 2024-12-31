@@ -1,0 +1,167 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mode": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "ipc": false,
+    "reload_style_on_change": true,
+    "height": 0,
+    "modules-left": [
+        "hyprland/workspaces",
+        "network",
+        "custom/vpn"
+    ],
+    "modules-center": [],
+    "modules-right": [
+        "custom/brightness",
+        "pulseaudio",
+        "pulseaudio#microphone",
+        "battery",
+        "hyprland/language",
+        "clock"
+    ],
+    "hyprland/window": {
+        "format": "{}"
+    },
+    "hyprland/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": true,
+        "show-special": true,
+        "on-scroll-up": "hyprctl dispatch workspace m-1",
+        "on-scroll-down": "hyprctl dispatch workspace m+1",
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4",
+              "5": "5",
+              "6": "6",
+              "7": "7",
+              "8": "8",
+              "9": "9",
+              "10": "10",
+              "urgent": "",
+              "default": "󰐗",
+              "magic": "󰓏"
+        },
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        },
+        "sort-by-number": true
+    },
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "English",
+        "format-ru": "Русский"
+    },
+    "keyboard-state": {
+        "numlock": false,
+        "scrolllock": false,
+        "capslock": true,
+        "format": "{icon}",
+        "format-icons": {
+            "locked": "Capslock",
+            "unlocked": ""
+        }
+    },   
+    "custom/weather" : {
+        "tooltip" : true,
+        "format" : "{}",
+        "interval" : 30,
+        "exec" : "~/.config/waybar/scripts/waybar-wttr.py",
+        "return-type" : "json"
+    },
+    "tray": {
+        "icon-size": 11,
+        "spacing": 8
+    },
+    "clock": {
+        "locale": "en_US.UTF-8",
+        "timezone": "Europe/Vilnius",
+    	"format": "{:L%d/%m %a  %R} ",
+        "tooltip-format": "<span font='JuliaMono 11'><tt><small>{calendar}</small></tt></span>",
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 3,
+            "format": {
+                "months":     "<span color='#504945'><b>{}</b></span>",
+                "days":       "<span color='#ebdbb2'><b>{}</b></span>",
+                "weeks":      "<span color='#928374'><b>W{}</b></span>",
+                "weekdays":   "<span color='#7c6f64'><b>{}</b></span>",
+                "today":      "<span color='#d79921'><b><u>{}</u></b></span>"
+            }
+        }
+    },
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "tooltip": false,
+        "format-muted": "  Muted",
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 2",
+        "on-scroll-down": "pamixer -d 2",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        }
+    },
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "tooltip": false,
+        "format-source-muted": "  Muted",
+        "on-click": "pamixer --default-source -t",
+        "on-scroll-up": "pamixer --default-source -i 2",
+        "on-scroll-down": "pamixer --default-source -d 2",
+        "scroll-step": 5
+    },
+    "battery": {
+        "bat": "BAT0",
+        "interval": 60,
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": "{icon}  {capacity}% (Charging)",
+        "format-icons": ["", "", "", "", ""],
+        "max-length": 25
+    },
+    "custom/brightness": {
+        "exec": "~/.config/waybar/scripts/waybar-brightness.sh",
+        "interval": 1,
+        "format": " {}%",
+	"signal": 10
+    },
+    "network": {
+        "interface": "wlan0",
+        "format": "{essid}",
+        "format-wifi": "  {essid}",
+        "format-ethernet": "{ipaddr}/{cidr} 󰊗 ",
+        "format-disconnected": "Disconnected",
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+    },
+    "custom/vpn": {
+        "exec": "~/.config/waybar/scripts/waybar-vpn.sh",
+        "interval": 10,
+        "format": "{}",
+        "tooltip": false
+    }
+}
