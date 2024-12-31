@@ -70,56 +70,56 @@ If you prefer to set up the dotfiles manually, follow these steps:
 ## Screenshots
 
 - **Desktop Overview:**
-  ![Desktop Overview](path/to/desktop_overview.png)
+  ![Desktop Overview](screenshots/desktop_overview.png)
   *My minimal Hyprland desktop with Gruvbox theme.*
 
 - **Terminal:**
-  ![Terminal](path/to/terminal.png)
+  ![Terminal](screenshots/terminal.png)
   *Kitty terminal with Zsh and Powerlevel10k theme.*
 
 - **Neovim:**
-  ![Neovim](path/to/neovim.png)
+  ![Neovim](screenshots/neovim.png)
   *Neovim with Gruvbox theme and plugins.*
 
 - **File Manager:**
-  ![Ranger](path/to/ranger.png)
+  ![Ranger](screenshots/ranger.png)
   *Ranger file manager in action.*
 
 - **Tmux:**
-  ![Tmux](path/to/tmux.png)
+  ![Tmux](screenshots/tmux.png)
   *Tmux session with multiple panes.*
 
 - **Dunst Notifications:**
-  ![Dunst](path/to/dunst.png)
+  ![Dunst](screenshots/dunst.png)
   *Dunst notification style.*
 
-- **Waybar:**
-  ![Waybar](path/to/waybar.png)
-  *Waybar showing system information.*
-
 - **Application Launcher:**
-  ![Wofi](path/to/wofi.png)
+  ![Wofi](screenshots/wofi.png)
   *Wofi application launcher.*
 
 - **System Monitoring:**
-  ![Btop](path/to/btop.png)
+  ![Btop](screenshots/btop.png)
   *Btop system monitoring.*
 
 - **Calendar Management:**
-  ![Calcurse](path/to/calcurse.png)
+  ![Calcurse](screenshots/calcurse.png)
   *Calcurse calendar and task management.*
 
 - **Spotify Customization:**
-  ![Spicetify](path/to/spicetify.png)
+  ![Spicetify](screenshots/spicetify.png)
   *Spicetify with custom Spotify theme.*
 
 - **Torrent Client:**
-  ![qBittorrent](path/to/qbittorrent.png)
+  ![qBittorrent](screenshots/qbittorrent.png)
   *qBittorrent interface.*
 
-- **Note-taking:**
-  ![Obsidian](path/to/obsidian.png)
+- **Note-taking with Obsidian:**
+  ![Obsidian](screenshots/obsidian.png)
   *Obsidian note-taking setup.*
+
+- **Note-taking with nvim:**
+  ![Obsidian](screenshots/obsidian_nvim.png)
+  *Obsidian note-taking setup using Obsidian nvim plugin.*
 
 ## Customization
 
