@@ -52,7 +52,7 @@ These are my personal dotfiles for my Arch Linux setup using Hyprland. The main 
     ```
 
 5. **Install additional tools:**
-    - **Hyprland**: Follow the [installation guide](https://github.com/hyprwm/Hyprland/wiki/Installation)
+    - **Hyprland**: Follow the [installation guide](https://wiki.hyprland.org/Getting-Started/Installation/)
     - **Powerlevel10k**: Follow the [installation guide](https://github.com/romkatv/powerlevel10k#installation)
     - **Spicetify**: Follow the [installation guide](https://github.com/khanhas/spicetify-cli#installation)
 
