@@ -141,6 +141,10 @@ bindkey '^[k' up-line-or-history
 # Bind Alt + j to move down in history
 bindkey '^[j' down-line-or-history
 
+# Bind Alt + h to move forward a word
+bindkey '^[l' forward-word
+bindkey '^[h' backward-word
+
 #bindkey -r '^L'
 #bindkey -r '^H'
 #bindkey -r '^J'

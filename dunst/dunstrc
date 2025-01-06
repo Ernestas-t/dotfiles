@@ -25,7 +25,7 @@
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = (300, 893)
+    width = (0, 893)
 
     # The height of a single notification, excluding the frame.
     # dynamic height from 0 to 300
@@ -334,12 +334,12 @@
 
 [urgency_low]
 background = "#282828C2"
-foreground = "#d4be98"
+foreground = "#ebdbb2"
 frame_color = "#ebdbb2"
 
 [urgency_normal]
 background = "#282828C2"
-foreground = "#d4be98"
+foreground = "#ebdbb2"
 frame_color = "#ebdbb2"
 
 [urgency_critical]
