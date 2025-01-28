@@ -626,7 +626,7 @@ require("lazy").setup({
 				--    https://github.com/pmizio/typescript-tools.nvim
 				--
 				-- But for many setups, the LSP (`tsserver`) will work just fine
-				tsserver = {},
+				ts_ls = {},
 				--
 
 				lua_ls = {
@@ -703,8 +703,8 @@ require("lazy").setup({
 				--
 				-- You can use a sub-list to tell conform to run *until* a formatter
 				-- is found.
-				javascript = { { "prettierd", "prettier" } },
-				typescript = { { "prettierd", "prettier" } },
+				javascript = { "prettierd", "prettier" },
+				typescript = { "prettierd", "prettier" },
 			},
 		},
 	},
@@ -970,6 +970,7 @@ require("lazy").setup({
 
 	{
 		"CopilotC-Nvim/CopilotChat.nvim",
+		branch = "main",
 		opts = {
 			show_help = false, -- Show help text for CopilotChatInPlace, default: yes
 			debug = false, -- Enable or disable debug mode, the log file will be in ~/.local/state/nvim/CopilotChat.nvim.log

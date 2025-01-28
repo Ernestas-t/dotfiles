@@ -117,6 +117,7 @@ alias wifi='impala'
 alias ff='fastfetch'
 alias c='clear'
 alias nt='cd ~/Documents/Obsidian && vim index.md'
+alias cl='clear && l'
 
 alias nuolaidauk='~/.config/scripts/nuolaidauk.sh'
 alias vpn='sudo openvpn --config /etc/openvpn/VPN.ovpn'

@@ -10,11 +10,11 @@ if ! tmux has-session -t Nuolaidauk 2>/dev/null; then
     tmux resize-pane -t Nuolaidauk:Backend.2 -y 20
 
     # Send commands to the first pane
-    tmux send-keys -t Nuolaidauk:Backend.1 "cd ~/Coding/Nuolaidauk-Stage/Backend; vim" C-m
+    tmux send-keys -t Nuolaidauk:Backend.1 "cd ~/Coding/Nuolaidauk-Stage/backend; vim" C-m
     tmux send-keys -t Nuolaidauk:Backend.1 " " n
 
     # Send commands to the second pane
-    tmux send-keys -t Nuolaidauk:Backend.2 "cd ~/Coding/Nuolaidauk-Stage/Backend/venv/bin/; source activate; cd ~/Coding/Nuolaidauk-Stage/Backend/; clear" C-m
+    tmux send-keys -t Nuolaidauk:Backend.2 "cd ~/Coding/Nuolaidauk-Stage/backend/venv/bin/; source activate; cd ~/Coding/Nuolaidauk-Stage/backend/; clear" C-m
     tmux send-keys -t Nuolaidauk:Backend.2 "clear" C-m
     tmux send-keys -t Nuolaidauk:Backend.2 "python manage.py runserver 3000"
 
@@ -26,11 +26,11 @@ if ! tmux has-session -t Nuolaidauk 2>/dev/null; then
     tmux resize-pane -t Nuolaidauk:Frontend.2 -y 20
 
     # Send commands to the first pane
-    tmux send-keys -t Nuolaidauk:Frontend.1 "cd ~/Coding/Nuolaidauk-Stage/Frontend; vim" C-m
+    tmux send-keys -t Nuolaidauk:Frontend.1 "cd ~/Coding/Nuolaidauk-Stage/frontend; vim" C-m
     tmux send-keys -t Nuolaidauk:Frontend.1 " " n
 
     # Send commands to the second pane
-    tmux send-keys -t Nuolaidauk:Frontend.2 "cd ~/Coding/Nuolaidauk-Stage/Frontend" C-m
+    tmux send-keys -t Nuolaidauk:Frontend.2 "cd ~/Coding/Nuolaidauk-Stage/frontend" C-m
     tmux send-keys -t Nuolaidauk:Frontend.2 "clear" C-m
     tmux send-keys -t Nuolaidauk:Frontend.2 "npm start"
 
