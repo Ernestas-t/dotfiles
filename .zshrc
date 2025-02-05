@@ -122,6 +122,11 @@ alias cl='clear && l'
 alias nuolaidauk='~/.config/scripts/nuolaidauk.sh'
 alias vpn='sudo openvpn --config /etc/openvpn/VPN.ovpn'
 
+alias managenode='ssh ernestas@192.168.1.40'
+alias worknode1='ssh ernestas@192.168.1.41'
+alias worknode2='ssh ernestas@192.168.1.42'
+alias prod='ssh ernestas@192.168.1.10'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
