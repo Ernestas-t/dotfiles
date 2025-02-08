@@ -14,7 +14,7 @@ if ! tmux has-session -t Nuolaidauk 2>/dev/null; then
     tmux send-keys -t Nuolaidauk:Backend.1 " " n
 
     # Send commands to the second pane
-    tmux send-keys -t Nuolaidauk:Backend.2 "source ~/Coding/Nuolaidauk/stage/backend/venv/bin/activate; clear" C-m
+    tmux send-keys -t Nuolaidauk:Backend.2 "cd ~/Coding/Nuolaidauk/stage/backend/venv/bin/; source activate; cd ~/Coding/Nuolaidauk/stage/backend/; clear" C-m
     tmux send-keys -t Nuolaidauk:Backend.2 "clear" C-m
     tmux send-keys -t Nuolaidauk:Backend.2 "python manage.py runserver 3000"
 
@@ -34,8 +34,10 @@ if ! tmux has-session -t Nuolaidauk 2>/dev/null; then
     tmux send-keys -t Nuolaidauk:Frontend.2 "clear" C-m
     tmux send-keys -t Nuolaidauk:Frontend.2 "npm start"
 
+
     # Create a new window named 'Scraper'
     tmux new-window -t Nuolaidauk -n Scraper
+
 
     # Split the window vertically, making the new pane 2 lines tall
     tmux split-window -v -l 20 -t Nuolaidauk:Scraper
@@ -46,8 +48,9 @@ if ! tmux has-session -t Nuolaidauk 2>/dev/null; then
     tmux send-keys -t Nuolaidauk:Scraper.1 " " n
 
     # Send commands to the second pane
-    tmux send-keys -t Nuolaidauk:Scraper.2 "source ~/Coding/Nuolaidauk/scraper/web-scraper/venv/bin/activate; clear" C-m
+    tmux send-keys -t Nuolaidauk:Scraper.2 "cd ~/Coding/Nuolaidauk/scraper/web-scraper/venv/bin/; source activate; cd ~/Coding/Nuolaidauk/scraper/web-scraper/; clear" C-m
     tmux send-keys -t Nuolaidauk:Scraper.2 "clear" C-m
+    tmux send-keys -t Nuolaidauk:Scraper.2 "python run-web-scraper.py"
 
     # Select the first pane
     tmux select-pane -t Nuolaidauk:Backend.1
