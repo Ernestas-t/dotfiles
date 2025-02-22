@@ -922,7 +922,7 @@ require("lazy").setup({
 		dependencies = { "neovim/nvim-lspconfig", "nvim-telescope/telescope.nvim", "mfussenegger/nvim-dap-python" },
 		opts = {
 			-- Your options go here
-			-- name = "venv",
+			name = ".venv", -- Set the name option to recognize .venv directories
 			-- auto_refresh = false
 		},
 		keys = {
