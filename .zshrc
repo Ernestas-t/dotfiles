@@ -18,6 +18,16 @@ export PATH="/usr/local/bin:$PATH"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+# Yazi config
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -187,3 +197,14 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 export PATH=$PATH:/Users/ernestastautkus/.spicetify
+
+bindkey -v
+
+export KEYTIMEOUT=1
+
+function zle-line-init zle-keymap-select {
+    RPS1="${${KEYMAP/vicmd/[NORMAL]}/(main|viins)/[INSERT]}"
+    zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select

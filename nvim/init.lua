@@ -605,21 +605,11 @@ require("lazy").setup({
 			--  - settings (table): Override the default settings passed when initializing the server.
 			--        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
 			local servers = {
-				-- clangd = {},
+				clangd = {},
 				-- gopls = {},
-				pyright = {
-					settings = {
-						python = {
-							analysis = {
-								extraPaths = {
-									"/home/ernestas/Coding/Nuolaidauk-Stage/Backend/venv/lib/python3.12/site-packages",
-								},
-							},
-						},
-					},
-				},
+				pyright = {},
 				tailwindcss = {},
-				-- rust_analyzer = {},
+				rust_analyzer = {},
 				-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
 				--
 				-- Some languages (like typescript) have entire language plugins that can be useful:
@@ -976,6 +966,7 @@ require("lazy").setup({
 			debug = false, -- Enable or disable debug mode, the log file will be in ~/.local/state/nvim/CopilotChat.nvim.log
 			disable_extra_info = "no", -- Disable extra information (e.g: system prompt) in the response.
 			language = "English", -- Copilot answer language settings when using default prompts. Default language is English.
+			model = "claude-3.7-sonnet-thought",
 			-- proxy = "socks5://127.0.0.1:3000", -- Proxies requests via https or socks.
 			mappings = {
 				reset = {
