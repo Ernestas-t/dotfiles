@@ -162,6 +162,7 @@
         "exec": "~/.config/waybar/scripts/waybar-vpn.sh",
         "interval": 10,
         "format": "{}",
-        "tooltip": false
+        "tooltip": false,
+        "on-click": "protonvpn-app"
     }
 }

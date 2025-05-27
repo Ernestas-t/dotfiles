@@ -199,12 +199,7 @@ load-nvmrc
 export PATH=$PATH:/Users/ernestastautkus/.spicetify
 
 bindkey -v
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
 
 export KEYTIMEOUT=1
-
-function zle-line-init zle-keymap-select {
-    RPS1="${${KEYMAP/vicmd/[NORMAL]}/(main|viins)/[INSERT]}"
-    zle reset-prompt
-}
-zle -N zle-line-init
-zle -N zle-keymap-select
