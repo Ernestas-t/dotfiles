@@ -304,11 +304,8 @@ require("lazy").setup({
 			vim.keymap.set("n", "<leader>f.", builtin.oldfiles, { desc = "[F]ind Recent Files" })
 			vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Find existing buffers" })
 
-			vim.keymap.set("n", "<leader>/", function()
-				builtin.current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
-					winblend = 10,
-					previewer = false,
-				}))
+			vim.keymap.set("n", "<leader>ff", function()
+				builtin.current_buffer_fuzzy_find()
 			end, { desc = "Fuzzily search in current buffer" })
 
 			vim.keymap.set("n", "<leader>s/", function()
