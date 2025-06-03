@@ -203,3 +203,8 @@ source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 
 export KEYTIMEOUT=1
+
+export ANDROID_HOME="/opt/android-sdk"
+unset ANDROID_SDK_ROOT
+export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$PATH"
+export JAVA_HOME="/usr/lib/jvm/java-21-openjdk"

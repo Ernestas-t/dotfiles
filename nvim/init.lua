@@ -259,6 +259,7 @@ require("lazy").setup({
 				{ "<leader>p", group = "[P]ython/[P]ackage" },
 				{ "<leader>n", group = "[N]PM/[N]ode" },
 				{ "<leader>m", group = "[M]anage (Django)" },
+				{ "<leader>cc", group = "[C]opilot [C]hat" },
 			},
 		},
 	},
@@ -379,6 +380,18 @@ require("lazy").setup({
 			capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
 
 			local servers = {
+				-- Go
+				gopls = {
+					settings = {
+						gopls = {
+							analyses = {
+								unusedparams = true,
+							},
+							staticcheck = true,
+							gofumpt = true,
+						},
+					},
+				},
 				-- Python
 				pyright = {
 					settings = {
@@ -427,6 +440,9 @@ require("lazy").setup({
 				"prettier", -- JS/TS/CSS formatters
 				"eslint_d", -- JS/TS linter
 				"debugpy", -- Python debugger
+				"gofumpt", -- Go formatter
+				"goimports", -- Go imports organizer
+				"golangci-lint", -- Go linter
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
@@ -454,6 +470,7 @@ require("lazy").setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
 				python = { "isort", "black" },
+				go = { "goimports", "gofumpt" },
 				javascript = { "prettierd", "prettier" },
 				typescript = { "prettierd", "prettier" },
 				javascriptreact = { "prettierd", "prettier" },
@@ -637,6 +654,7 @@ require("lazy").setup({
 					"markdown",
 					"vim",
 					"vimdoc",
+					"go",
 					"python",
 					"javascript",
 					"typescript",
@@ -827,6 +845,59 @@ require("lazy").setup({
 				highlights = { fill = {} },
 			})
 		end,
+	},
+
+	-- File manager with yazi
+	{
+		"mikavilpas/yazi.nvim",
+		event = "VeryLazy",
+		dependencies = {
+			"folke/snacks.nvim",
+		},
+		keys = {
+			{
+				"<leader>-",
+				mode = { "n", "v" },
+				"<cmd>Yazi<cr>",
+				desc = "Open yazi at the current file",
+			},
+			{
+				"<leader>cw",
+				"<cmd>Yazi cwd<cr>",
+				desc = "Open yazi in working directory",
+			},
+			{
+				"<c-up>",
+				"<cmd>Yazi toggle<cr>",
+				desc = "Resume last yazi session",
+			},
+		},
+		opts = {
+			open_for_directories = false,
+			keymaps = {
+				show_help = "<f1>",
+				close_window = "<esc>",
+			},
+		},
+		init = function()
+			vim.g.loaded_netrwPlugin = 1
+		end,
+	},
+
+	-- Go development
+	{
+		"ray-x/go.nvim",
+		dependencies = {
+			"ray-x/guihua.lua",
+			"neovim/nvim-lspconfig",
+			"nvim-treesitter/nvim-treesitter",
+		},
+		config = function()
+			require("go").setup()
+		end,
+		event = { "CmdlineEnter" },
+		ft = { "go", "gomod" },
+		build = ':lua require("go.install").update_all_sync()',
 	},
 
 	-- Additional plugins
