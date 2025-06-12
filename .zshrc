@@ -142,6 +142,18 @@ alias perf='sudo tlp ac'
 alias save='sudo tlp bat'
 alias auto='sudo tlp start'
 
+# git aliases
+alias gs='git status --short'
+alias gd="git diff --output-indicator-new=' ' --output-indicator-old=' '"
+alias ga='git add'
+alias gc='git commit --verbose'
+alias gp='git push'
+alias gu='git pull'
+alias gl='git log --oneline --graph --decorate'
+alias gb='git branch'
+alias gi='git init'
+alias gcl='git clone'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
